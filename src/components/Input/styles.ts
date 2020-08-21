@@ -18,6 +18,10 @@ export const Container = styled.View`
   flex-direction: row;
   align-items: center;
 
+  ${props => props.isErrored && css`
+    border-color: #c53030;
+  `}
+
   ${props => props.isFocused && css`
     border-color: #ff9000;
   `}
